@@ -1,0 +1,18 @@
+[package]
+name = "echo-test-ebpf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+echo-test-common = { path = "../echo-test-common" }
+
+aya-ebpf = { workspace = true }
+aya-log-ebpf = { workspace = true }
+
+[build-dependencies]
+which = { workspace = true }
+xtask = { path = "../xtask" }
+
+[[bin]]
+name = "echo-test"
+path = "src/main.rs"

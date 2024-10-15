@@ -1,0 +1,8 @@
+[package]
+name = "tun-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tun2 = { version = "3.1.7", features = ["async"] }
+internet-packet = {  version = "0.2.2", features = ["internet-checksum"] }
